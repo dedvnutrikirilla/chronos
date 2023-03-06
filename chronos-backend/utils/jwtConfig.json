@@ -1,0 +1,15 @@
+{
+    "secret": "ro7ro97a7hgpbkGmOQ6p1pOgKjTbUz8DPY",
+    "accessToken": {
+        "expiresIn": "15m"
+    },
+    "refreshToken": {
+        "expiresIn": "60d"
+    },
+    "mailToken": {
+        "expiresIn": ""
+    },
+    "passToken": {
+        "expiresIn": "15m"
+    }
+}

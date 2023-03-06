@@ -1,0 +1,87 @@
+@import "../../../colors.scss";
+
+.inviteForm {
+    &.unactive{
+        display: none;
+    }
+
+    &.active{
+        position: fixed;
+        display: block;
+        background-color: rgba(0, 0, 0, .5);
+        min-height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+
+    .inviteFormCenter {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 20px;
+        border: none;
+        border-radius: 15px;
+        z-index: 10000;
+
+        .crossButton {
+            align-self: flex-end;
+            margin-bottom: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        input[type="search"] {
+            border: none;
+            background: none;
+            border-bottom: 1px solid #393E465E;
+            text-align: start;
+            font-family: 'Inter';
+            width: 100%;
+            margin-bottom: 25px;
+
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            padding: 5px 0px;
+            /* identical to box height */
+            color: rgba(0, 0, 0, 0.34);
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.34);
+            }
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            width: 328px;
+            height: 40px;
+            color: white;
+            background: #393E46;
+            border: 1px solid #393E46;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+    .found, .notFound {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
